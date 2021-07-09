@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_x="216dp"
+        android:layout_y="457dp"
+        android:text="Discount" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_x="46dp"
+        android:layout_y="454dp"
+        android:text="Surcharge" />
+
+    <EditText
+        android:id="@+id/viewCartTextView"
+        android:layout_width="331dp"
+        android:layout_height="208dp"
+        android:layout_x="27dp"
+        android:layout_y="66dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/cardBtn"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_x="13dp"
+        android:layout_y="348dp"
+        android:text="Card" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_x="148dp"
+        android:layout_y="349dp"
+        android:text="Cash" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_x="275dp"
+        android:layout_y="348dp"
+        android:text="Split" />
+
+    <TextView
+        android:id="@+id/Subtotal"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_x="47dp"
+        android:layout_y="86dp"
+        android:text="Subtotal: " />
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_x="47dp"
+        android:layout_y="131dp"
+        android:text="Discount: " />
+
+    <TextView
+        android:id="@+id/subtotal2"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_x="47dp"
+        android:layout_y="172dp"
+        android:text="Tax: " />
+
+    <TextView
+        android:id="@+id/subtotal3"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_x="47dp"
+        android:layout_y="216dp"
+        android:text="Total: " />
+
+</AbsoluteLayout>
