@@ -8,4 +8,37 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue"> #1E90FF</color>
+    <color name="colorPrimary">#1D5BC9</color>
+    <color name="colorPrimaryDark">#174DAC</color>
+    <color name="colorAccent">#3369FF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorOrange">#FF6E4E</color>
+    <color name="colorYellow">#F2D176</color>
+    <color name="colorRed">#FF5271</color>
+    <color name="buttonColorRed">#D82742</color>
+    <color name="colorLightRed">#FFEDED</color>
+    <color name="colorGrayTenPercent">#1A8E9AAD</color>
+    <color name="colorGray">#8E9AAD</color>
+    <color name="colorGrayLight">#DADEE3</color>
+    <color name="colorLightText">#817D7D</color>
+    <color name="colorText">#282F39</color>
+    <color name="colorBlue">#3369FF</color>
+    <color name="selectedCalendar">#3AAEE2</color>
+    <color name="colorBlueText">#4B85EB</color>
+    <color name="colorDark">#152743</color>
+    <color name="colorGreen">#356037</color>
+    <color name="colorGreenishBackground">#EAFFE8</color>
+    <color name="colorRadish">#FFEDED</color>
+    <color name="colorSoft">#f7f6fb</color>
+    <color name="colorLighGrey">#E0E0E0</color>
+    <color name="colorGrayText">#828282</color>
+    <color name="colorBackground">#fffafafa</color>
+    <color name="colorBackgroundDark">#FBF9F9</color>
+    <color name="colorGraySeventyPercent">#B38E9AAD</color>
+    <color name="colorGrey">#dddddd</color>
+    <color name="colorLightBlue">#F7F7F8</color>
+    <color name="colorLight">#F2F2F2</color>
+    <color name="colorBluesh">#DEE9FF</color>
+
 </resources>

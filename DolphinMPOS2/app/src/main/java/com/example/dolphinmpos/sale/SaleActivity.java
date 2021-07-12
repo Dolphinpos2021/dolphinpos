@@ -1,16 +1,16 @@
-package com.example.dolphinmpos;
+package com.example.dolphinmpos.sale;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+
+import com.example.dolphinmpos.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,7 +44,7 @@ public class SaleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.getSupportActionBar().hide();
+      //  this.getSupportActionBar().hide();
         setContentView(R.layout.activity_sale);
         viewCart=findViewById(R.id.viewcartTextView);
 
@@ -69,7 +69,7 @@ public class SaleActivity extends AppCompatActivity {
 viewCart.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        Intent intent=new Intent(v.getContext(),CheckoutActivity.class);
+        Intent intent=new Intent(v.getContext(), CheckoutActivity.class);
         startActivity(intent);
     }
 });

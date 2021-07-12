@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context=".support.CustomerSupport">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/progressBarStyleHome"
+        android:layout_below="@id/layoutHeader" />
+
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:contentDescription="@string/content_description"
+            android:padding="@dimen/small_margin"
+            android:src="@drawable/ic_back_white" />
+
+
+        <TextView
+            style="@style/heading_text_view_style"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="@string/help_and_support"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/medium_margin" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNoProductFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_vector_sell_image" />
+
+        <TextView
+            style="@style/simple_text_view_style"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="@string/no_product_found"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/layoutHelp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutHeader"
+                android:layout_marginTop="@dimen/extreme_large_margin"
+                >
+
+                <FrameLayout
+                    android:id="@+id/imageViewHelp"
+                    android:layout_width="match_parent"
+                    android:translationZ="1dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/help_img" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageViewHelp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginBottom="@dimen/extra_small_margin">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:background="@drawable/stroke_background_blue_high"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            style="@style/heading_text_view_style"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/help"
+                            android:textColor="@color/colorBlue" />
+
+                        <TextView
+                            style="@style/simple_text_view_style"
+                            android:text="@string/how_can_we_help"
+                            android:textColor="@color/colorLightText" />
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/layoutCallNow"
+                android:layout_width="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutHeader"
+                android:layout_marginTop="@dimen/xxx_large_margin"
+                >
+
+                <FrameLayout
+                    android:id="@+id/imageViewCallNow"
+                    android:layout_width="match_parent"
+                    android:translationZ="1dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/help_img" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageViewCallNow"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginBottom="@dimen/extra_small_margin">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="132dp"
+                        android:background="@drawable/stroke_background_blue_high"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            style="@style/heading_text_view_style"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/call_now"
+                            android:textColor="@color/colorBlue" />
+
+
+                        <TextView
+                            style="@style/simple_text_view_style"
+                            android:text="@string/phone_number"
+                            android:textColor="@color/colorLightText" />
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+            <!--    <View-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="5dp"-->
+            <!--        android:layout_below="@+id/layoutCallNow"-->
+            <!--        android:layout_marginStart="@dimen/large_margin"-->
+            <!--        android:layout_marginTop="@dimen/medium_margin"-->
+            <!--        android:layout_marginEnd="@dimen/large_margin"-->
+            <!--        android:background="@color/colorGrayTenPercent" />-->
+
+            <RelativeLayout
+                android:id="@+id/layoutContactUs"
+                android:layout_width="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/layoutCallNow"
+                android:layout_marginTop="@dimen/xxx_large_margin">
+
+
+                <FrameLayout
+                    android:id="@+id/imageViewContactUs"
+                    android:layout_width="match_parent"
+                    android:translationZ="1dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/help_img"
+                        android:translationZ="0dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageViewContactUs"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginBottom="@dimen/extra_small_margin">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:background="@drawable/stroke_background_blue_high"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            style="@style/heading_text_view_style"
+                            android:text="@string/contact_us_small"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorBlue" />
+
+
+                        <TextView
+                            style="@style/simple_text_view_style"
+                            android:text="@string/lets_get_in_touch"
+                            android:textColor="@color/colorLightText" />
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

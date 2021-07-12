@@ -1,4 +1,4 @@
-package com.example.dolphinmpos;
+package com.example.dolphinmpos.itemservices;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+
+import com.example.dolphinmpos.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,7 +40,7 @@ public class ItemServicesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.getSupportActionBar().hide();
+ //       this.getSupportActionBar().hide();
         setContentView(R.layout.activity_item_services);
         addItemBtn=findViewById(R.id.addItemBtn);
 
@@ -62,7 +64,7 @@ public class ItemServicesActivity extends AppCompatActivity {
         addItemBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(v.getContext(),AddItemActivity.class);
+                Intent intent=new Intent(v.getContext(), AddItemActivity.class);
                 startActivity(intent);
             }
         });

@@ -2,20 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dolphinmpos">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DolphinMPOS">
-        <activity android:name=".AddItemActivity"></activity>
-        <activity android:name=".ItemServicesActivity" />
-        <activity android:name=".CompleteTransactionActivity" />
-        <activity android:name=".CheckoutActivity" />
-        <activity android:name=".SaleActivity" />
+        android:theme="@style/AppTheme">
+        <activity android:name=".sale.SurchargeActivity"></activity>
+        <activity android:name=".sale.DiscountActivity" />
+        <activity android:name=".sale.CardActivity" />
+        <activity android:name=".sale.CashActivity" />
+        <activity android:name=".customerloyalty.CustomerLoyaltyActivity" />
+        <activity android:name=".support.ContactUsActivity" />
+        <activity android:name=".support.CustomerSupport" />
+        <activity android:name=".itemservices.AddItemActivity" />
+        <activity android:name=".itemservices.ItemServicesActivity" />
+        <activity android:name=".transaction.CompleteTransactionActivity" />
+        <activity android:name=".sale.CheckoutActivity" />
+        <activity android:name=".sale.SaleActivity" />
         <activity android:name=".DashboardActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".login.LoginActivity" />
         <activity android:name=".LoaderActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

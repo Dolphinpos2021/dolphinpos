@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sale.SurchargeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imageViewCashBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:contentDescription="@string/content_description"
+            android:padding="@dimen/small_margin"
+            android:src="@drawable/ic_back_white" />
+
+
+        <TextView
+            style="@style/heading_text_view_style"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="Cash"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/medium_margin" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_toStartOf="@id/totalAmountTv"
+            android:layout_marginEnd="5dp"
+            android:text="Sub Total Amount:"></TextView>
+
+        <TextView
+            android:id="@+id/totalAmountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:text="$200"></TextView>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextSurchargeType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="@dimen/medium_margin"
+            android:hint="Surcharge Type"
+            android:inputType="text"
+            app:errorEnabled="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_money"
+            android:drawablePadding="@dimen/medium_margin"
+            android:hint="Amount"
+            android:inputType="number"
+            app:errorEnabled="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_toStartOf="@id/remainingAmountTv"
+            android:layout_marginEnd="5dp"
+            android:text="Total Amount:"></TextView>
+
+        <TextView
+            android:id="@+id/remainingAmountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorRed"
+            android:layout_alignParentEnd="true"
+            android:text="$200"></TextView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        style="@style/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:padding="@dimen/medium_margin"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite" />
+
+
+
+
+
+</LinearLayout>

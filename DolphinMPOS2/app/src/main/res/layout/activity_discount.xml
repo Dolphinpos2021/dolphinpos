@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".sale.DiscountActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imageViewDiscountBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:contentDescription="@string/content_description"
+            android:padding="@dimen/small_margin"
+            android:src="@drawable/ic_back_white" />
+
+
+        <TextView
+            style="@style/heading_text_view_style"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="Discount"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/medium_margin" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+    <Button
+        android:id="@+id/fivePercent"
+        style="@style/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:padding="@dimen/medium_margin"
+        android:text="5%"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/tenPercent"
+        style="@style/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:padding="@dimen/medium_margin"
+        android:text="10%"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/fifteenPercent"
+        style="@style/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:padding="@dimen/medium_margin"
+        android:text="15%"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/twentyPercent"
+        style="@style/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:padding="@dimen/medium_margin"
+        android:text="20%"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/twentyFivePercent"
+        style="@style/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:padding="@dimen/medium_margin"
+        android:text="25%"
+        android:textColor="@color/colorWhite" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Custom Discount"
+                android:textColor="@color/black"
+                android:gravity="center"
+                ></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:hint="Add Custom Discount"
+                    android:inputType="number"
+                    app:errorEnabled="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/customDiscountBtn"
+                style="@style/button_style"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:padding="@dimen/medium_margin"
+                android:text="Add Discount"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

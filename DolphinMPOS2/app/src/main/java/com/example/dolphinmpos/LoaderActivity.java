@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.dolphinmpos.login.LoginActivity;
+
 public class LoaderActivity extends AppCompatActivity {
 
     //thread timing
@@ -13,7 +15,7 @@ public class LoaderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.getSupportActionBar().hide();
+     //   this.getSupportActionBar().hide();
         setContentView(R.layout.activity_loader);
 
         //thread to load the image.
@@ -21,7 +23,7 @@ public class LoaderActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //intent to run and move to another class.
-                Intent imageIntent = new Intent(LoaderActivity.this,LoginActivity.class);
+                Intent imageIntent = new Intent(LoaderActivity.this, LoginActivity.class);
                 LoaderActivity.this.startActivity(imageIntent);
                 LoaderActivity.this.finish();
             }

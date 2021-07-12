@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".support.ContactUsActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/progressBarStyleHome"
+        android:layout_below="@id/layoutHeader" />
+
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:contentDescription="@string/content_description"
+            android:padding="@dimen/small_margin"
+            android:src="@drawable/ic_back_white" />
+
+
+        <TextView
+            style="@style/heading_text_view_style"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="@string/contact_us"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNoProductFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_vector_sell_image" />
+
+        <TextView
+            style="@style/simple_text_view_style"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="@string/no_product_found"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutHeaderTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHeader"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewHeading"
+            style="@style/heading_text_view_style"
+            android:text="Let's Get in"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/textViewHeadingTouch"
+            style="@style/heading_text_view_style"
+            android:text="Touch"
+            android:textAlignment="viewStart" />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="@dimen/extra_small_margin"
+            android:background="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSubmitNow"
+        android:layout_below="@+id/layoutHeaderTwo"
+        android:layout_margin="@dimen/medium_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_user_field"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    app:errorEnabled="true" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_mail"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    app:errorEnabled="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_contuctno"
+                    android:drawablePadding="@dimen/medium_margin"
+                    android:hint="@string/contact_no"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    app:errorEnabled="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/medium_margin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="@string/comment_box"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:paddingStart="@dimen/extra_x_large_margin"
+                    android:scrollbars="vertical"
+                    app:errorEnabled="true"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonSubmitNow"
+        style="@style/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:padding="@dimen/medium_margin"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite" />
+
+
+</RelativeLayout>
